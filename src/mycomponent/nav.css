@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Inter&family=Open+Sans:ital@1&family=Sacramento&display=swap');
+
+body {
+    background-color: #d6e2ec;
+}
+
+.container {
+    margin: auto;
+    width: 85%;
+    height: 35px;
+    margin-top: 45px;
+    /* border: 1px solid red; */
+    padding: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    border-radius: 9px;
+}
+
+.innerdiv {
+    /* border: 1px solid black; */
+    width: fit-content;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+p {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #374151;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+p:hover,
+p:focus {
+    color: rgb(181, 192, 192);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.Contact {
+    padding: 5px 24px 5px 19px;
+    outline: none;
+    border: none;
+    border-radius: 49px;
+    cursor: pointer;
+}
+
+.Contact {
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #0088a6;
+
+    color: rgb(255, 255, 255);
+}
+
+.Contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+}
+
+.Contact:hover::before,
+.Contact:focus::before {
+    color: #222;
+    transform: scale(1.5);
+}
+
+.Contact:hover,
+.Contact:focus {
+    transition: 500ms;
+    color: #8ec038;
+}
+
+.Contact {
+    z-index: 1;
+    overflow: hidden;
+}
